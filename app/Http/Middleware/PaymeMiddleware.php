@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class PaymeMiddleware
 {
+    
     public function handle(Request $request, Closure $next): Response
     {
         $authorization = $request->header('Authorization');
