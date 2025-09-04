@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Log;
 
 class PaymeController extends Controller
 {
+    
     public function payme(Request $req)
     {
         if ($req->input('method') == 'CheckPerformTransaction') {
